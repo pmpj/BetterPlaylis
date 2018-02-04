@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 let defaultStyle = {
-  color: '#007f00'
+  color: '#2a2a2a'
 };
 
 class Aggregate extends Component{
@@ -30,7 +29,7 @@ class Filter extends Component{
 class Playlist extends Component{
   render(){
     return (
-      <div style={{...defaultStyle, width:'30%', display:'inline-block'}}>
+      <div style={{...defaultStyle, width:'20%', display:'inline-block'}}>
         <img/>
         <h3>List Songs</h3>
         <ul>
@@ -47,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <h1>Title</h1>
+      <h1 style={{...defaultStyle, 'font-size':'54px'}}>Title</h1>
        <Aggregate/>
        <Aggregate/>
        <Filter/>
